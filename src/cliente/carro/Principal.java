@@ -1,5 +1,7 @@
 package cliente.carro;
 
+import es.antrob.Carro;
+
 public class Principal {
 
 	public static void main(String[] args) {
@@ -16,6 +18,13 @@ public class Principal {
 	
 	private static boolean testarConstrucaoCarro() {
 		
+		Carro carroTeste = new Carro();
+		
+		if((carroTeste.getCapacidadeDeposito() == 40.0) && (carroTeste.getQuantidadeCombustivel() == 0) )
+		return true;
+		
+		else
+			
 		return false;
 	}
 	
